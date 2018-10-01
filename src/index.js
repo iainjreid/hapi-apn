@@ -1,18 +1,15 @@
 'use strict'
 
-const apn = require('apn')
+const { Provider, Notification } = require('apn')
 
-exports.register = function (server, options, next) {
-  let connection;
-
-  if (options) {
-    connection = new apn.Provider(options)
-  }
-
+exports.register = function (server, options = {}, next) {
   server.decorate('server', 'apn', {
-    connection,
-    Notification: apn.Notification,
-    Provider: apn.Provider
+    get connection() {
+      return new Provider(options)
+    },
+
+    Notification,
+    Provider
   })
 
   next()

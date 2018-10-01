@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/iainreid820/hapi-apn#readme",
   "dependencies": {
-    "apn": "^2.1.5"
+    "apn": "^2.2.0"
   }
 }
