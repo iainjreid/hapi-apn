@@ -3,11 +3,10 @@
 const { Provider, Notification } = require('apn')
 
 exports.register = function (server, options = {}, next) {
-  server.decorate('server', 'apn', {
-    get connection() {
-      return new Provider(options)
-    },
+  const connection = new Provider(options)
 
+  server.decorate('server', 'apn', {
+    connection,
     Notification,
     Provider
   })
