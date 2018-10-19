@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "Apple Push Notifications from your Hapi applications using Node APN",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=8.8.1"
+  },
   "scripts": {
     "test": "echo \"Warning: no test specified\""
   },
