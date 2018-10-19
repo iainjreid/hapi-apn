@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/iainreid820/hapi-apn#readme",
   "dependencies": {
-    "apn": "^2.2.0"
+    "node-apn-http2": "^1.2.0"
   },
   "greenkeeper": {
     "commitMessages": {
