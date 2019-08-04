@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Warning: no test specified\""
   },
-  "author": "Iain Reid <iainreid382@gmail.com>",
+  "author": "Iain Reid <iainreid382@gmail.com> (https://chaff.land)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iainreid820/hapi-apn.git"
